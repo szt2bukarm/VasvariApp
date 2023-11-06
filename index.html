@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script type="module" src="js/fetch.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="welcome-screen">
+        <div class="welcome-screen__left">
+            <div class="welcome-screen__header">
+                <img src="src/common/logo.svg" alt="Vasvari logo" class="welcome-screen__logo">
+                <p class="welcome-screen__text">Vasvári App</p>
+                <p class="welcome-screen__mode">Bejelentkezés</p>
+            </div>
+            <div class="welcome-screen__inputs">
+                <form class="welcome-screen__form">
+                    <div class="welcome-screen__username">
+                        <input type="text" id="username" name="username" class="welcome-screen__username-input" required>    
+                        <label class="welcome-screen__username-label" for="username">Felhasználónév</label>
+                    </div>
+
+                    <div class="welcome-screen__password">
+                        <label class="welcome-screen__password-label" for="password">Jelszó</label>
+                        <input type="text" id="password" name="password" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="welcome-screen__right"></div>
+    </div>
+
+</body>
+</html>

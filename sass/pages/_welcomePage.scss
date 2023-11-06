@@ -1,0 +1,41 @@
+.welcome-screen {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+    &__left,&__header{
+        @include center_flex;
+        flex-direction: column;
+    }
+
+    &__left{
+        background-color: $color-light;
+    }
+
+    &__header{
+        align-items: start;
+    }
+
+    &__right{
+        width: 100%;
+        height: 100vh;
+        background-color: red;
+    }
+
+    &__logo{
+        align-self: center;
+        width: 9rem;
+        margin-bottom: 2rem;
+    }
+
+    &__text{
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: $color-primary;
+    }
+
+    &__mode{
+        font-size: 2rem;
+        font-weight: 200;
+        margin-bottom: 4rem;
+    }
+}

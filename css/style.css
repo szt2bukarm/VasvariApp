@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: Inter; }
+
+.welcome-screen__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20rem; }
+
+.welcome-screen__username, .welcome-screen__password {
+  position: relative; }
+
+.welcome-screen__username-input:focus + .welcome-screen__username-label {
+  top: 0;
+  left: 0;
+  scale: .8; }
+
+.welcome-screen input {
+  border: 0;
+  border-bottom: 0.2rem solid #8f4d77;
+  width: 20rem;
+  padding: 1.5rem 1rem .5rem 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  background-color: transparent; }
+
+.welcome-screen label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 1.4rem;
+  transition: all .1s; }
+
+.welcome-screen {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; }
+  .welcome-screen__left, .welcome-screen__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .welcome-screen__left {
+    background-color: #f8e7f2; }
+  .welcome-screen__header {
+    align-items: start; }
+  .welcome-screen__right {
+    width: 100%;
+    height: 100vh;
+    background-color: red; }
+  .welcome-screen__logo {
+    align-self: center;
+    width: 9rem;
+    margin-bottom: 2rem; }
+  .welcome-screen__text {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #8f4d77; }
+  .welcome-screen__mode {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 4rem; }

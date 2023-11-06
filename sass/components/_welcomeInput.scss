@@ -1,0 +1,38 @@
+.welcome-screen {
+    &__form{
+        @include center_flex;
+        flex-direction: column;
+        width: 20rem;
+    }
+
+    &__username,&__password{
+        position: relative;
+    }
+
+    &__username-input:focus + &__username-label{
+        top: 0;
+        left: 0;
+        scale: .8;
+    }
+
+    input {
+        border: 0;
+        border-bottom: .2rem solid $color-primary;
+        width: 20rem;
+        padding: 1.5rem 1rem .5rem 1rem;
+        margin-bottom: 1rem;
+        outline: none;
+        background-color: transparent;
+    }
+
+    label{
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        color: black;
+        font-size: 1.4rem;
+
+        transition: all .1s;
+    }
+}
